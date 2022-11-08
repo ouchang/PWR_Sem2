@@ -1,0 +1,152 @@
+\hypertarget{class_change_thread}{}\doxysection{Change\+Thread Class Reference}
+\label{class_change_thread}\index{ChangeThread@{ChangeThread}}
+Inheritance diagram for Change\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_change_thread}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_change_thread_ab084862568cc209be3a7c3a1db503b94}{Change\+Thread}} (JPanel \mbox{\hyperlink{class_change_thread_a6963147cf05a17772fb829b8ce17f61f}{rect}}, \mbox{\hyperlink{class_params}{Params}} \mbox{\hyperlink{class_change_thread_adb4a1e232c5b805bfdb0d9f438ec0855}{param}}, int \mbox{\hyperlink{class_change_thread_aa37683bea7a64a3656ebc5082df11dd0}{x}}, int \mbox{\hyperlink{class_change_thread_acb3bbc7f1a7697f9ba347f99fdef25eb}{y}}, \mbox{\hyperlink{class_color_grid}{Color\+Grid}} \mbox{\hyperlink{class_change_thread_a7e746235f383d511330e88d48c64a86b}{main\+Panel}})
+\item 
+void \mbox{\hyperlink{class_change_thread_a1d33d879c761b7a249b57ef9917037c1}{to\+Sleep}} ()
+\item 
+void \mbox{\hyperlink{class_change_thread_aa6812400e4ae2fd8e58bf74914042591}{to\+Resume}} ()
+\item 
+synchronized boolean \mbox{\hyperlink{class_change_thread_a18f77719a68ca7e130c70b56260db86c}{is\+Sleeping}} ()
+\item 
+void \mbox{\hyperlink{class_change_thread_a45f099a6551a30351dabc9b0d08c0585}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_color_grid}{Color\+Grid}} \mbox{\hyperlink{class_change_thread_a7e746235f383d511330e88d48c64a86b}{main\+Panel}}
+\item 
+JPanel \mbox{\hyperlink{class_change_thread_a6963147cf05a17772fb829b8ce17f61f}{rect}}
+\item 
+\mbox{\hyperlink{class_params}{Params}} \mbox{\hyperlink{class_change_thread_adb4a1e232c5b805bfdb0d9f438ec0855}{param}}
+\item 
+int \mbox{\hyperlink{class_change_thread_aa37683bea7a64a3656ebc5082df11dd0}{x}}
+\item 
+int \mbox{\hyperlink{class_change_thread_acb3bbc7f1a7697f9ba347f99fdef25eb}{y}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_change_thread_ac4a135a87dd1a5c13022b613a54a3f11}{set\+Color}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile boolean \mbox{\hyperlink{class_change_thread_a6dfc88762aff5fb34c529649c8ff7884}{sleep}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for handling threads. A given thread changes the colour of the rectangle after a small period of time. If the user clicked on one of the rectangles, the associated thread becomes suspended. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_change_thread_ab084862568cc209be3a7c3a1db503b94}\label{class_change_thread_ab084862568cc209be3a7c3a1db503b94}} 
+\index{ChangeThread@{ChangeThread}!ChangeThread@{ChangeThread}}
+\index{ChangeThread@{ChangeThread}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{ChangeThread()}{ChangeThread()}}
+{\footnotesize\ttfamily Change\+Thread.\+Change\+Thread (\begin{DoxyParamCaption}\item[{JPanel}]{rect,  }\item[{\mbox{\hyperlink{class_params}{Params}}}]{param,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_color_grid}{Color\+Grid}}}]{main\+Panel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle (Panel) which is associated with a given thread \\
+\hline
+{\em param} & User\textquotesingle{}s parameters \\
+\hline
+{\em x} & Rectangle\textquotesingle{}s index for a position in rows \\
+\hline
+{\em y} & Rectangle\textquotesingle{}s index for a position in columns \\
+\hline
+{\em main\+Panel} & Panel on which we are creating the main grid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_change_thread_a18f77719a68ca7e130c70b56260db86c}\label{class_change_thread_a18f77719a68ca7e130c70b56260db86c}} 
+\index{ChangeThread@{ChangeThread}!isSleeping@{isSleeping}}
+\index{isSleeping@{isSleeping}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{isSleeping()}{isSleeping()}}
+{\footnotesize\ttfamily synchronized boolean Change\+Thread.\+is\+Sleeping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The method which tells if a given thread is suspended. \begin{DoxyReturn}{Returns}
+Boolean information if a given thread is suspended. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_thread_a45f099a6551a30351dabc9b0d08c0585}\label{class_change_thread_a45f099a6551a30351dabc9b0d08c0585}} 
+\index{ChangeThread@{ChangeThread}!run@{run}}
+\index{run@{run}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Change\+Thread.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The main method used by threads. It is responsible for changing the rectangles\textquotesingle{} colours. \mbox{\Hypertarget{class_change_thread_ac4a135a87dd1a5c13022b613a54a3f11}\label{class_change_thread_ac4a135a87dd1a5c13022b613a54a3f11}} 
+\index{ChangeThread@{ChangeThread}!setColor@{setColor}}
+\index{setColor@{setColor}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily Color Change\+Thread.\+set\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The method responsible for calculating the average of the neighbours\textquotesingle{} colours \begin{DoxyReturn}{Returns}
+Average colour based on the neighbours 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_thread_aa6812400e4ae2fd8e58bf74914042591}\label{class_change_thread_aa6812400e4ae2fd8e58bf74914042591}} 
+\index{ChangeThread@{ChangeThread}!toResume@{toResume}}
+\index{toResume@{toResume}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{toResume()}{toResume()}}
+{\footnotesize\ttfamily void Change\+Thread.\+to\+Resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The method responsible for unblocking the thread and getting it back to normal \mbox{\Hypertarget{class_change_thread_a1d33d879c761b7a249b57ef9917037c1}\label{class_change_thread_a1d33d879c761b7a249b57ef9917037c1}} 
+\index{ChangeThread@{ChangeThread}!toSleep@{toSleep}}
+\index{toSleep@{toSleep}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{toSleep()}{toSleep()}}
+{\footnotesize\ttfamily void Change\+Thread.\+to\+Sleep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The method responsible for making a thread suspended by changing a flag 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_change_thread_a7e746235f383d511330e88d48c64a86b}\label{class_change_thread_a7e746235f383d511330e88d48c64a86b}} 
+\index{ChangeThread@{ChangeThread}!mainPanel@{mainPanel}}
+\index{mainPanel@{mainPanel}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{mainPanel}{mainPanel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_color_grid}{Color\+Grid}} Change\+Thread.\+main\+Panel\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_change_thread_adb4a1e232c5b805bfdb0d9f438ec0855}\label{class_change_thread_adb4a1e232c5b805bfdb0d9f438ec0855}} 
+\index{ChangeThread@{ChangeThread}!param@{param}}
+\index{param@{param}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_params}{Params}} Change\+Thread.\+param\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_change_thread_a6963147cf05a17772fb829b8ce17f61f}\label{class_change_thread_a6963147cf05a17772fb829b8ce17f61f}} 
+\index{ChangeThread@{ChangeThread}!rect@{rect}}
+\index{rect@{rect}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily JPanel Change\+Thread.\+rect\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_change_thread_a6dfc88762aff5fb34c529649c8ff7884}\label{class_change_thread_a6dfc88762aff5fb34c529649c8ff7884}} 
+\index{ChangeThread@{ChangeThread}!sleep@{sleep}}
+\index{sleep@{sleep}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{sleep}{sleep}}
+{\footnotesize\ttfamily volatile boolean Change\+Thread.\+sleep = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_change_thread_aa37683bea7a64a3656ebc5082df11dd0}\label{class_change_thread_aa37683bea7a64a3656ebc5082df11dd0}} 
+\index{ChangeThread@{ChangeThread}!x@{x}}
+\index{x@{x}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Change\+Thread.\+x\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_change_thread_acb3bbc7f1a7697f9ba347f99fdef25eb}\label{class_change_thread_acb3bbc7f1a7697f9ba347f99fdef25eb}} 
+\index{ChangeThread@{ChangeThread}!y@{y}}
+\index{y@{y}!ChangeThread@{ChangeThread}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Change\+Thread.\+y\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_change_thread_8java}{Change\+Thread.\+java}}\end{DoxyCompactItemize}

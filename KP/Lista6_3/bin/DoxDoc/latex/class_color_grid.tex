@@ -1,0 +1,108 @@
+\hypertarget{class_color_grid}{}\doxysection{Color\+Grid Class Reference}
+\label{class_color_grid}\index{ColorGrid@{ColorGrid}}
+Inheritance diagram for Color\+Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_color_grid}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_color_grid_1_1_mouse_test_adapter}{Mouse\+Test\+Adapter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_color_grid_aa5c9228d9f01801be920c88fd0e65492}{Color\+Grid}} (\mbox{\hyperlink{class_params}{Params}} \mbox{\hyperlink{class_color_grid_a8fe3bb9ce89f7037fa2fed2fda56a372}{param}})
+\item 
+void \mbox{\hyperlink{class_color_grid_a33bfbd5d33b8bbed65a007112d618a34}{run\+Thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_params}{Params}} \mbox{\hyperlink{class_color_grid_a8fe3bb9ce89f7037fa2fed2fda56a372}{param}}
+\item 
+JPanel\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_color_grid_a2bacae6cc08fb09412f473a3a03ea98d}{Grid\+Elements}}
+\item 
+\mbox{\hyperlink{class_change_thread}{Change\+Thread}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_color_grid_a589a8a2b0717d0e801acf462e5497d40}{Grid\+Threads}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}{WIDTH}} = 100
+\item 
+static final int \mbox{\hyperlink{class_color_grid_a89fe18e422a74564535dbcc8c26c91ff}{HEIGHT}} = \mbox{\hyperlink{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}{WIDTH}}
+\item 
+static final Dimension \mbox{\hyperlink{class_color_grid_af3121eb4f167eb244b7e727a8962d6a0}{PREF\+\_\+\+SIZE}} = new Dimension(\mbox{\hyperlink{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}{WIDTH}}, \mbox{\hyperlink{class_color_grid_a89fe18e422a74564535dbcc8c26c91ff}{HEIGHT}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for creating a grid of rectangles. Each rectangle is considered as individual thread. Class \mbox{\hyperlink{class_color_grid}{Color\+Grid}} also supports the use of the mouse. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_color_grid_aa5c9228d9f01801be920c88fd0e65492}\label{class_color_grid_aa5c9228d9f01801be920c88fd0e65492}} 
+\index{ColorGrid@{ColorGrid}!ColorGrid@{ColorGrid}}
+\index{ColorGrid@{ColorGrid}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{ColorGrid()}{ColorGrid()}}
+{\footnotesize\ttfamily Color\+Grid.\+Color\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_params}{Params}}}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. The constructor adds mouse service and creates a grid of rectangles with random colours 
+\begin{DoxyParams}{Parameters}
+{\em param} & The user\textquotesingle{}s parameters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_color_grid_a33bfbd5d33b8bbed65a007112d618a34}\label{class_color_grid_a33bfbd5d33b8bbed65a007112d618a34}} 
+\index{ColorGrid@{ColorGrid}!runThread@{runThread}}
+\index{runThread@{runThread}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{runThread()}{runThread()}}
+{\footnotesize\ttfamily void Color\+Grid.\+run\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The method responsible for creating and starting a thread, each connected with a given rectangle. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_color_grid_a2bacae6cc08fb09412f473a3a03ea98d}\label{class_color_grid_a2bacae6cc08fb09412f473a3a03ea98d}} 
+\index{ColorGrid@{ColorGrid}!GridElements@{GridElements}}
+\index{GridElements@{GridElements}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{GridElements}{GridElements}}
+{\footnotesize\ttfamily JPanel \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Color\+Grid.\+Grid\+Elements\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_color_grid_a589a8a2b0717d0e801acf462e5497d40}\label{class_color_grid_a589a8a2b0717d0e801acf462e5497d40}} 
+\index{ColorGrid@{ColorGrid}!GridThreads@{GridThreads}}
+\index{GridThreads@{GridThreads}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{GridThreads}{GridThreads}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_change_thread}{Change\+Thread}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Color\+Grid.\+Grid\+Threads\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_color_grid_a89fe18e422a74564535dbcc8c26c91ff}\label{class_color_grid_a89fe18e422a74564535dbcc8c26c91ff}} 
+\index{ColorGrid@{ColorGrid}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily final int Color\+Grid.\+HEIGHT = \mbox{\hyperlink{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}{WIDTH}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_color_grid_a8fe3bb9ce89f7037fa2fed2fda56a372}\label{class_color_grid_a8fe3bb9ce89f7037fa2fed2fda56a372}} 
+\index{ColorGrid@{ColorGrid}!param@{param}}
+\index{param@{param}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_params}{Params}} Color\+Grid.\+param\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_color_grid_af3121eb4f167eb244b7e727a8962d6a0}\label{class_color_grid_af3121eb4f167eb244b7e727a8962d6a0}} 
+\index{ColorGrid@{ColorGrid}!PREF\_SIZE@{PREF\_SIZE}}
+\index{PREF\_SIZE@{PREF\_SIZE}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{PREF\_SIZE}{PREF\_SIZE}}
+{\footnotesize\ttfamily final Dimension Color\+Grid.\+PREF\+\_\+\+SIZE = new Dimension(\mbox{\hyperlink{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}{WIDTH}}, \mbox{\hyperlink{class_color_grid_a89fe18e422a74564535dbcc8c26c91ff}{HEIGHT}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}\label{class_color_grid_ab5741c2a488d9b45eb928be4b3c4174e}} 
+\index{ColorGrid@{ColorGrid}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!ColorGrid@{ColorGrid}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily final int Color\+Grid.\+WIDTH = 100\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_color_grid_8java}{Color\+Grid.\+java}}\end{DoxyCompactItemize}

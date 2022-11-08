@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"App"},{"p":"<Unnamed>","l":"ChangeThread"},{"p":"<Unnamed>","l":"ColorGrid"},{"p":"<Unnamed>","l":"ColorGrid.MouseTestAdapter"},{"p":"<Unnamed>","l":"MyFrame"},{"p":"<Unnamed>","l":"Params"}];updateSearchResults();
